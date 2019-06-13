@@ -85,6 +85,36 @@ section.masthead {
   }
 }
 
+.grid {
+  @extend .flex;
+
+  list-style-type: none;
+  margin: 100px 0;
+
+  li {
+    @extend .center;
+    border-right: 1px solid $subtle-shade;
+    margin: 0;
+    padding: 25px;
+
+    @media (max-width: 768px) {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    .icon {
+      font-size: $font-size * 6;
+
+      i {
+        font-style: normal;
+      }
+    }
+  }
+}
+
 section.cta {
   background: white;
   box-shadow: 10px 10px 0 $primary;
@@ -114,8 +144,4 @@ section.cta {
       color: $text;
     }
   }
-}
-
-footer {
-  background: lighten($primary, 29%);
 }

@@ -1,5 +1,9 @@
+import '@babel/polyfill'
+import 'whatwg-fetch'
+
 import Typed from 'typed.js'
 import smoothscroll from 'smoothscroll-polyfill'
+import notie from 'notie'
 
 const typeStrings = [
   'best french food in the city',
@@ -41,9 +45,52 @@ const setSmoothscrolls = () => {
   }
 }
 
+const submitEmailForm = async event => {
+  event.preventDefault()
+  const { email: { value: email }, name: { value: name } } = event.target.form.elements
+  const errors = []
+
+  if (!name || name.trim() === '') errors.push('name')
+  if (!email || email.trim() === '') errors.push('email')
+
+  if (errors.length > 0) {
+    notie.alert({
+      type: 'warning',
+      text: `Please make sure to enter a real ${errors.join(' and ')}!`
+    })
+
+    return
+  }
+
+  try {
+      const request = await window.fetch('https://api.pinmark.io/notify_me', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, name })
+    })
+
+    const response = await request.json()
+
+    if (response.error) throw new Error('response.error')
+
+    notie.alert({
+      type: 'success',
+      text: `Thanks ${name}! We'll be in touch! 👋`
+    })
+  } catch (error) {
+    console.error(error)
+    notie.alert({
+      type: 'error',
+      text: `Oops – something went wrong...`
+    })
+  }
+}
+
 const init = () => {
   typeahead('#type-places')
   setSmoothscrolls()
+
+  document.getElementById('submit-email-form').addEventListener('click', submitEmailForm)
 }
 
 init()

@@ -18,7 +18,7 @@
 
     <title>pinmark.io</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.scss">
 
     <!-- <meta property="og:image" content="/amsterdam.jpg"> -->
@@ -31,14 +31,14 @@
   </head>
   <body>
 
-    <nav>
+    <!-- <nav>
       <div class="container">
         <a class="brand" href="/">
           <img src="../public/logo-colour.svg">
           <span>Pinmark.io</span>
         </a>
       </div>
-    </nav>
+    </nav> -->
 
     <section class="masthead angle--bottom-right">
       <div class="container">
@@ -67,22 +67,44 @@
     </section>
 
     <section>
-      <h2 class="topper">Never lose an awesome spot again.</h2>
-      <p class="leadin">
-        Pinmark helps you organise spots you save with #tags, lists and by city.
-      </p>
-
-      <h2 class="topper">Share the love 😘</h2>
-      <p class="leadin">
-        You know better places than your friends – prove it by sharing your spots with them!
-      </p>
+      <ul class="grid">
+        <li>
+          <p class="icon"><i>🙈</i></p>
+          <h2 class="topper">Never lose an awesome spot again.</h2>
+          <p class="leadin">
+            Pinmark helps you organise spots you save with searchable #tags, lists and by city.
+          </p>
+        </li>
+        <li>
+          <p class="icon"><i>💞</i></p>
+          <h2 class="topper">Share the love</h2>
+          <p class="leadin">
+            You know better places than your friends – prove it by sharing your spots with them!
+          </p>
+        </li>
+        <li>
+          <p class="icon"><i>🌍</i></p>
+          <h2 class="topper">Discover new places</h2>
+          <p class="leadin">
+            It's a big world out there – forget fake reviews, choose who you trust.
+          </p>
+        </li>
+      </ul>
     </section>
 
     <section class="cta center">
-        <h2 class="topper">Join the beta test</h2>
+        <h2 class="topper">Pinmark.io isn't ready yet...</h2>
         <p class="leadin">
-          Start using the app before everyone else!
+          But do you want to be notified when it's ready?
         </p>
+
+        <form class="padded">
+          <input type="text" id="name" name="name" placeholder="your first name">
+          <input type="email" id="email" name="email" placeholder="your email">
+          <button id="submit-email-form">Notify me</button>
+        </form>
+
+        <p class="center contained-half small">This email will be used to notify you when Pinmark.io's app is ready. No spam!</p>
     </section>
 
     <footer>
@@ -93,5 +115,7 @@
     </footer>
 
     <script src="../js/scripts.js"></script>
+    <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+    <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
   </body>
 </html>

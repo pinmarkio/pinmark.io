@@ -11,6 +11,7 @@ $subtle-shade: #dedede;
 $background: #f5f5f5;
 
 @import '../node_modules/angled-edges/assets/styles/angled-edges.scss';
+@import '../node_modules/notie/src/notie.scss';
 
 @import './base.scss';
 @import './layout.scss';
