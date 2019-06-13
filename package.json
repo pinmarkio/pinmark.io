@@ -1,0 +1,21 @@
+{
+  "name": "pinmark.io",
+  "version": "2.0.0",
+  "description": "Website for Pinmark.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel html/index.html",
+    "build": "parcel build html/index.html"
+  },
+  "author": "mtimofiiv <git@fiiv.io>",
+  "license": "MIT",
+  "dependencies": {
+    "angled-edges": "github:NigelOToole/angled-edges",
+    "parcel-bundler": "^1.12.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "typed.js": "^2.0.10"
+  },
+  "devDependencies": {
+    "sass": "^1.21.0"
+  }
+}

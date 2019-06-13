@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 130 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-135,-80)">
+        <g id="apple.png--2x" serif:id="apple.png+@2x">
+            <path id="background" d="M139,80L261,80C263.209,80 265,81.791 265,84L265,116C265,118.209 263.209,120 261,120L139,120C136.791,120 135,118.209 135,116L135,84C135,81.791 136.791,80 139,80Z" style="fill:rgb(5,7,7);"/>
+            <g transform="matrix(1,0,0,1,173.667,93.6667)">
+                <g id="download-on-the-app-store" serif:id="download on the app store">
+                    <g id="Download-on-the-App-Store" serif:id="Download on the App Store">
+                        <text x="0px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">D</text>
+                        <text x="7.485px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">o</text>
+                        <text x="13.075px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">w</text>
+                        <text x="20.58px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">n</text>
+                        <text x="25.74px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">l</text>
+                        <text x="28.13px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">o</text>
+                        <text x="34.26px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">a</text>
+                        <text x="39.66px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">d</text>
+                        <text x="47.82px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">o</text>
+                        <text x="53.51px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">n</text>
+                        <text x="62.05px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">t</text>
+                        <text x="65.395px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">h</text>
+                        <text x="71.615px" y="0px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:10px;fill:white;">e</text>
+                        <text x="0px" y="17px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:18px;fill:white;">A</text>
+                        <text x="11.988px" y="17px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:18px;fill:white;">p</text>
+                        <text x="22.509px" y="17px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:18px;fill:white;">p</text>
+                        <text x="37.206px" y="17px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:18px;fill:white;">S</text>
+                        <text x="47.061px" y="17px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:18px;fill:white;">t</text>
+                        <text x="53.514px" y="17px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:18px;fill:white;">or</text>
+                        <text x="70.272px" y="17px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:18px;fill:white;">e</text>
+                    </g>
+                </g>
+            </g>
+            <path id="icon" d="M159.098,92.233C161.957,92.233 163.785,94.975 163.785,94.975C163.785,94.975 160.996,96.475 160.996,99.733C160.996,103.6 164.5,104.725 164.5,104.725C164.5,104.725 161.734,111.229 158.629,111.229C156.883,111.229 156.766,110.233 154.445,110.233C152.43,110.233 151.75,111.229 150.215,111.229C147.285,111.229 143.5,104.889 143.5,99.733C143.5,94.377 147.332,92.233 149.734,92.233C151.844,92.233 152.723,93.463 154.422,93.463C155.852,93.463 156.977,92.233 159.098,92.233ZM158.606,86.772C159.027,89.397 156.625,92.643 153.754,92.537C153.332,89.197 156.426,86.947 158.606,86.772Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
