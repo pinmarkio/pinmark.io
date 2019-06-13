@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel html/index.html",
-    "build": "parcel build html/index.html"
+    "prebuild": "rm -rf dist",
+    "build": "parcel build html/index.html",
+    "deploy:apollo": "npm run build && surge ./dist apollo.pinmark.io",
+    "deploy:live": "npm run build && surge ./dist pinmark.io"
   },
   "author": "mtimofiiv <git@fiiv.io>",
   "license": "MIT",
@@ -13,6 +16,7 @@
     "angled-edges": "github:NigelOToole/angled-edges",
     "parcel-bundler": "^1.12.3",
     "smoothscroll-polyfill": "^0.4.4",
+    "surge": "^0.21.3",
     "typed.js": "^2.0.10"
   },
   "devDependencies": {
