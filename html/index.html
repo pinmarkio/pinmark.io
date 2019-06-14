@@ -45,7 +45,7 @@
         <div>
           <h1 class="center">Mark & save all your favourite spots</h1>
 
-          <figure class="logo"><img src="../public/logo-colour.svg"></figure>
+          <figure class="logo rounded-image"><img src="../public/logo-colour.svg"></figure>
 
           <p class="center typing">The <strong id="type-places" class="cursor"></strong></p>
 
@@ -61,6 +61,10 @@
             <a href="javascript:void(0);" class="masthead-cta-button">
               <img src="../public/btn-store-android-coming.svg">
             </a>
+
+            <br>
+
+            <a data-scroll-id="action" class="smoothscroll">Want to get notified when it's ready?</a>
           </p>
         </div>
       </div>
@@ -92,23 +96,49 @@
       </ul>
     </section>
 
-    <section class="cta center">
-        <h2 class="topper">Pinmark.io isn't ready yet...</h2>
+    <!-- <section class="flex about-maker">
+      <div>
+        <figure class="avatar rounded-image">
+          <img src="../public/maker.jpg" />
+        </figure>
+      </div>
+      <div class="wide">
+        <h2 class="topper">About the maker</h2>
         <p class="leadin">
-          But do you want to be notified when it's ready?
+          Pinmark is an app built by <a href="https://fiiv.io?ref=pinmark">@fiiv</a>.
         </p>
+      </div>
+    </section> -->
 
-        <form class="padded">
-          <input type="text" id="name" name="name" placeholder="your first name">
-          <input type="email" id="email" name="email" placeholder="your email">
-          <button id="submit-email-form">Notify me</button>
-        </form>
+    <section class="cta center" id="action">
+      <h2 class="topper">Pinmark.io isn't ready yet...</h2>
+      <p class="leadin">
+        But do you want to be notified when it's ready?
+      </p>
 
-        <p class="center contained-half small">This email will be used to notify you when Pinmark.io's app is ready. No spam!</p>
+      <form class="padded">
+        <input type="text" id="name" name="name" placeholder="your first name">
+        <input type="email" id="email" name="email" placeholder="your email">
+        <button id="submit-email-form">Notify me</button>
+      </form>
+
+      <p class="center contained-half small">This email will be used to notify you when Pinmark.io's app is ready. No spam!</p>
     </section>
 
     <footer>
-      <p>Pinmark.io is being built by <a href="https://fiiv.io?ref=pinmark">@fiiv</a>.</p>
+      <p>
+        <a href="https://twitter.com/pinmark_io" class="social-btn">
+          <img src="../public/icon-twitter.svg">
+        </a>
+        &nbsp;|&nbsp;
+        <a href="https://blog.pinmark.io" class="social-btn">
+          <img src="../public/icon-blog.svg">
+        </a>
+        &nbsp;|&nbsp;
+        <a href="mailto:hello@pinmark.io" class="social-btn">
+          <img src="../public/icon-email.svg">
+        </a>
+      </p>
       <!-- <p>
         <a href="/terms">Terms of service</a> | <a href="/privacy">Privacy policy</a>
       </p> -->

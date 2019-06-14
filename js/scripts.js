@@ -37,12 +37,10 @@ const scrollTo = event => {
 }
 
 const setSmoothscrolls = () => {
-  const smoothScrolls = document.querySelectorAll('.smoothscroll')
+  smoothscroll.polyfill()
 
-  for (const el of smoothScrolls) {
-    el.addEventListener('click', scrollTo)
-    pluginRefs.push({ type: 'smoothscroll', ref: el })
-  }
+  const smoothScrolls = document.querySelectorAll('.smoothscroll')
+  for (const el of smoothScrolls) el.addEventListener('click', scrollTo)
 }
 
 const submitEmailForm = async event => {

@@ -28,6 +28,29 @@ nav {
   }
 }
 
+.rounded-image {
+  width: 200px;
+  height: 200px;
+  margin: 2% auto;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 10px solid $primary;
+
+  box-shadow: inset 0 0 10px #000000;
+
+  img {
+    border-radius: 50%;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: .2s;
+  }
+}
+
 section.masthead {
   width: 100%;
   margin: 0;
@@ -37,29 +60,12 @@ section.masthead {
   h1 { font-size: 300%; }
 
   .logo {
-    width: 200px;
-    height: 200px;
-    margin: 2% auto;
-
     background-image: url('../public/amsterdam.jpg');
     background-position: center;
     background-size: cover;
 
-    display: flex;
-    justify-content: center;
-
-    border-radius: 50%;
-    border: 10px solid $primary;
-
-    box-shadow: inset 0 0 10px #000000;
-
     img {
       width: 50%;
-    }
-
-    &:hover {
-      transform: scale(1.05);
-      transition-duration: .2s;
     }
   }
 
@@ -142,6 +148,33 @@ section.cta {
       animation: 800ms ease 0s normal none infinite running caret;
       content: '|';
       color: $text;
+    }
+  }
+}
+
+section.about-maker {
+  margin-top: 150px;
+}
+
+.avatar {
+  @extend .logo;
+}
+
+.smoothscroll {
+  cursor: pointer;
+}
+
+footer {
+  a.social-btn {
+    &:hover {
+      text-decoration: none;
+    }
+
+    img {
+      position: relative;
+      top: 5px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
