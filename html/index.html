@@ -1,151 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+<include src="includes/header.html"></include>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png?v=pgr40oR8vR">
-    <link rel="icon" type="image/png" href="../public/favicon-32x32.png?v=pgr40oR8vR" sizes="32x32">
-    <link rel="icon" type="image/png" href="../public/android-chrome-192x192.png?v=pgr40oR8vR" sizes="192x192">
-    <link rel="icon" type="image/png" href="../public/favicon-16x16.png?v=pgr40oR8vR" sizes="16x16">
-    <link rel="manifest" href="../public/manifest.json?v=pgr40oR8vR">
-    <link rel="mask-icon" href="../public/safari-pinned-tab.svg?v=pgr40oR8vR" color="#ff865f">
-    <link rel="shortcut icon" href="../public/favicon.ico?v=pgr40oR8vR">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="../public/mstile-144x144.png?v=pgr40oR8vR">
-    <meta name="theme-color" content="#ffffff">
+<section class="masthead">
+  <div class="container">
+    <h1 class="center typing">
+      Where <span id="type-places" class="cursor location"></span>
+    </h1>
 
-    <title>pinmark.io</title>
+    <p class="center leadin">How many times have you asked yourself (or your friends) a question like that?</p>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.scss">
+    <p class="center padded">
+      <a data-scroll-id="action" class="smoothscroll button">
+        Get the beta
+      </a>
+    </p>
+  </div>
+</section>
 
-    <!-- <meta property="og:image" content="/amsterdam.jpg"> -->
-    <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="1333">
-    <meta property="og:title" content="Pinmark.io">
-    <meta property="og:description" content="Pinmark.io is your own map. Places you've been or places you want to go to, all can be recorded and saved so you don't forget.">
-    <meta property="og:url" content="https://pinmark.io">
+<section class="screen-container unrestrict">
+  <div class="screenie-bg angle--both-left-left altbg"></div>
+  <div class="screenie-container">
+    <div class="container flex vcentered no-stack">
+      <p class="wide">
+        Create and organise your own <span class="text-primary">personal collection</span> of places, and never lose them again.
+      </p>
 
-  </head>
-  <body>
+      <div class="screenshot"><img src="../public/screenshot.png"></div>
+  </div>
+</section>
 
-    <!-- <nav>
-      <div class="container">
-        <a class="brand" href="/">
-          <img src="../public/logo-colour.svg">
-          <span>Pinmark.io</span>
-        </a>
-      </div>
-    </nav> -->
+<section>
+  <div class="container">
+    <h2>Save, tag, share (or not)</h2>
 
-    <section class="masthead angle--bottom-right">
-      <div class="container">
-        <div>
-          <h1 class="center">Mark & save all your favourite spots</h1>
+    <p class="leadin">Finding quality places you like is difficult. Forgetting them is much, much easier. Pinmark is a map that specialises in preventing that tragedy.</p>
 
-          <figure class="logo rounded-image"><img src="../public/logo-colour.svg"></figure>
+    <ul class="points">
+      <li>
+        <img src="../public/icon-pin.svg">
+        <p>Save a place you like on your own dedicated place map</p>
+      </li>
+      <li>
+        <img src="../public/icon-tag.svg">
+        <p>Tag each place so you don't lose it</p>
+      </li>
+      <li>
+        <img src="../public/icon-share.svg">
+        <p>If your friends are lucky, maybe you will share your awesome finds with them 😘</p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-          <p class="center typing">The <strong id="type-places" class="cursor"></strong></p>
+<section>
+  <div class="container">
+    <h2>Discover other people's gems</h2>
 
-          <p class="center contained-half">
-            Pinmark.io is your own personal list of places to visit and things to do. Share them with your friends or just hoard your awesome knowledge yourself 😉
-          </p>
+    <p class="leadin">Tools like TripAdvisor, Foursquare and Google Maps are great, but there is no filter on what you might actually like. How much can you trust the review of Patty from Newcastle?</p>
 
-          <p class="center cta-buttons">
-            <a href="javascript:void(0);" class="masthead-cta-button">
-              <img src="../public/btn-store-ios-coming.svg">
-            </a>
+    <ul class="points">
+      <li>
+        <img src="../public/icon-map.svg">
+        <p>Follow your friends and see the places they share</p>
+      </li>
+      <li>
+        <img src="../public/icon-activity.svg">
+        <p>Keep your finger on the pulse by checking out local influencers you can relate to</p>
+      </li>
+      <li>
+        <img src="../public/icon-heart.svg">
+        <p>If all else fails, the "I'm feeling lucky" of places will match you with a place</p>
+      </li>
+    </ul>
+  </div>
+</section>
 
-            <a href="javascript:void(0);" class="masthead-cta-button">
-              <img src="../public/btn-store-android-coming.svg">
-            </a>
+<section class="cta center" id="action">
+  <h2 class="topper">Pinmark.io isn't ready yet...</h2>
+  <p class="leadin">
+    But do you want to be notified when it's ready?
+  </p>
 
-            <br>
+  <form class="padded">
+    <input type="text" id="name" name="name" placeholder="your first name">
+    <input type="email" id="email" name="email" placeholder="your email">
+    <button id="submit-email-form" class="square-left">Notify me</button>
+  </form>
 
-            <a data-scroll-id="action" class="smoothscroll">Want to get notified when it's ready?</a>
+  <p class="center contained-half small">This email will be used to notify you when Pinmark.io's app is ready. No spam!</p>
+</section>
+
+<!-- <section>
+    <div class="container">
+      <h2>Pinmark is an indie maker product</h2>
+
+      <div class="flex vcentered">
+        <figure class="avatar narrow">
+          <img src="../public/maker.jpg">
+        </figure>
+        <div class="wide">
+          <p>
+            I'm Mike, an indie maker and developer, and I'm building Pinmark solo. Read more about how it's going <a href="https://blog.pinmark.io">on the blog</a>, or feel free to reach out to me on <a href="https://twitter.com/mtimofiiv">Twitter (@mtimofiiv)</a> if you have any ideas or suggestions!
           </p>
         </div>
       </div>
-    </section>
+    </div>
+</section> -->
 
-    <section>
-      <ul class="grid">
-        <li>
-          <p class="icon"><i>🙈</i></p>
-          <h2 class="topper">Never lose an awesome spot again.</h2>
-          <p class="leadin">
-            Pinmark helps you organise spots you save with searchable #tags, lists and by city.
-          </p>
-        </li>
-        <li>
-          <p class="icon"><i>💞</i></p>
-          <h2 class="topper">Share the love</h2>
-          <p class="leadin">
-            You know better places than your friends – prove it by sharing your spots with them!
-          </p>
-        </li>
-        <li>
-          <p class="icon"><i>🌍</i></p>
-          <h2 class="topper">Discover new places</h2>
-          <p class="leadin">
-            It's a big world out there – forget fake reviews, choose who you trust.
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- <section class="flex about-maker">
-      <div>
-        <figure class="avatar rounded-image">
-          <img src="../public/maker.jpg" />
-        </figure>
-      </div>
-      <div class="wide">
-        <h2 class="topper">About the maker</h2>
-        <p class="leadin">
-          Pinmark is an app built by <a href="https://fiiv.io?ref=pinmark">@fiiv</a>.
-        </p>
-      </div>
-    </section> -->
-
-    <section class="cta center" id="action">
-      <h2 class="topper">Pinmark.io isn't ready yet...</h2>
-      <p class="leadin">
-        But do you want to be notified when it's ready?
-      </p>
-
-      <form class="padded">
-        <input type="text" id="name" name="name" placeholder="your first name">
-        <input type="email" id="email" name="email" placeholder="your email">
-        <button id="submit-email-form">Notify me</button>
-      </form>
-
-      <p class="center contained-half small">This email will be used to notify you when Pinmark.io's app is ready. No spam!</p>
-    </section>
-
-    <footer>
-      <p>
-        <a href="https://twitter.com/pinmark_io" class="social-btn">
-          <img src="../public/icon-twitter.svg">
-        </a>
-        &nbsp;|&nbsp;
-        <a href="https://blog.pinmark.io" class="social-btn">
-          <img src="../public/icon-blog.svg">
-        </a>
-        &nbsp;|&nbsp;
-        <a href="mailto:hello@pinmark.io" class="social-btn">
-          <img src="../public/icon-email.svg">
-        </a>
-      </p>
-      <!-- <p>
-        <a href="/terms">Terms of service</a> | <a href="/privacy">Privacy policy</a>
-      </p> -->
-    </footer>
-
-    <script src="../js/scripts.js"></script>
-    <script async defer src="https://sa.pinmark.io/app.js"></script>
-    <noscript><img src="https://sa.pinmark.io/image.gif" alt=""></noscript>
-  </body>
-</html>
+<include src="includes/footer.html"></include>

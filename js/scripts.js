@@ -6,13 +6,9 @@ import smoothscroll from 'smoothscroll-polyfill'
 import notie from 'notie'
 
 const typeStrings = [
-  'best french food in the city',
-  'shortcut to the beach',
-  'bar with literally 50 beers on tap',
-  'nice tea place in Petit Socco',
-  'store open 24/7',
-  'square where all the food trucks go',
-  'makeout spot in the park'
+  'did we get phở last time?',
+  'was the shortcut to the beach?',
+  'is the playground he really likes?'
 ]
 
 const shuffle = array => array.sort(() => Math.random() - 0.5)

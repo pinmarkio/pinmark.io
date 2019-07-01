@@ -16,7 +16,7 @@ body {
 a, a:visited {
   color: $primary;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 a:hover {
@@ -33,13 +33,14 @@ a:hover {
   }
 }
 
-section {
+section:not(.unrestrict) {
   @extend .container;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $primary;
   padding: 15px 0;
+  font-family: $font-family;
 }
 
 h1 { font-size: 200%; }
@@ -48,6 +49,10 @@ h3 { font-size: 160%; }
 h4 { font-size: 140%; }
 h5 { font-size: 120%; }
 h6 { font-size: 100%; }
+
+h2, h3, h4, h5, h6 {
+  font-family: $font-family-alt;
+}
 
 p {
   margin: 10px 0;
@@ -67,7 +72,11 @@ p.small {
   font-size: $font-size * 0.75;
 }
 
-strong { font-weight: bold; }
+.text-primary {
+  color: $primary;
+}
+
+strong { font-weight: $font-weight-bold; }
 
 ul, ol {
   width: 100%;
@@ -83,6 +92,10 @@ ul, ol {
 
 .flex.vertical {
   flex-direction: column;
+}
+
+.flex.vcentered:not(.vertical) {
+  align-items: center;
 }
 
 .flex.vertical.vcentered {
@@ -108,6 +121,10 @@ ul, ol {
 
 .flex > .wide {
   flex: 2;
+}
+
+.flex > .narrow {
+  flex: 0.5;
 }
 
 figure img {
@@ -154,14 +171,23 @@ button, .button {
   font-size: $font-size;
   font-family: $font-family;
   border-width: 0;
-  padding: 10px 14px 8px 14px;
+  padding: 9px 24px 11px 24px;
   background: $primary;
   cursor: pointer;
   color: white !important;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   text-decoration: none !important;
+  border-radius: 30px;
+  position: relative;
+  top: -2px;
 
   &:hover { background: lighten($primary, 5%); }
+
+  &.square-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 14px;
+  }
 }
 
 input, textarea {
@@ -176,7 +202,7 @@ input, textarea {
 }
 
 @media (max-width: 768px) {
-  section {
+  section:not(.unrestrict) {
     width: 98%;
     box-shadow: none;
     margin: 1%;
